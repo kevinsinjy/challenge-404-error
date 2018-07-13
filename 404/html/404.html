@@ -1,0 +1,54 @@
+<!--A partir du wireframe suivant : https://xd.adobe.com/view/49b0658d-5a5c-436e-5b73-a7b7a3c7a91e-3f81/ (mdp : Simplon2018)
+<br><b>Créez votre propre et unique page 404</b> 
+<br>La page 404 devra respecter le layout donné par le wireframe
+<br>La page devra comporter une création CSS faites de formes (shapes en anglais)
+<br>Vous ne pouvez pas utiliser d'images ou de svg, seules les formes CSS sont autorisées.
+<br>Vous devrez afficher un message de confirmation ou d'erreur dans un élément html à la soumission du formulaire (par contre pas de traitement post-submit = pas de back-end)
+<br>Faites preuve d'imagination et de créativité.
+<br>Tuto : https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
+<br>Aide : https://css-tricks.com/examples/ShapesOfCSS/
+<br>Inspirations : https://codepen.io/search/pens?q=css%20draw-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Libre+Barcode+128+Text" rel="stylesheet">
+  <link rel="stylesheet" href="../css/404.css" />
+</head>
+
+<body>
+  <div class='master-container'>
+    <div class="error full-width">
+      <h1>404</h1>
+      <h2>error</h2>
+      <p>La page recherchée n'existe point !
+        <br> Rediriges-toi vers l'accueil pelo :</p>
+      <a href="">accueil</a>
+    </div>
+    <div class='box'>
+      <div class="draw">
+        <h2>Space Invader</h2>
+        <div id="space-invader"></div>
+      </div>
+
+      <div class="form">
+        <h2>formulaire</h2>
+
+        <form>
+          <legend>Mail</legend>
+
+          <label for="primary">Entre ton adresse frère :</label>
+          <input type="email" placeholder="example@example.com" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="30" required title="Une adresse valide poto"
+          />
+        </form>
+        <div class="pixelart-to-css"></div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
